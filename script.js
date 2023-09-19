@@ -31,3 +31,18 @@ let javascriptnumber = document.querySelector(".javascriptskill .text");
 let intervalId3 = setInterval(displaypercent(javascriptnumber, 50), 38);
 let javanumber = document.querySelector(".javaskill .text");
 let intervalId4 = setInterval(displaypercent(javanumber, 65), 30);
+
+const sr = ScrollReveal({
+  origin: "top",
+  distance: "60px",
+  duration: 2000,
+  delay: 200,
+  // reset: true,
+});
+
+sr.reveal(".about-section,.skill-section,.contact-section,.footer", {});
+sr.reveal("nav-link", {
+  delay: 400,
+});
+sr.reveal(".home__social-icon", { interval: 200 });
+sr.reveal(".main-content .main-img", { interval: 200 });
